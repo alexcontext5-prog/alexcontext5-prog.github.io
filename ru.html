@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Александр Комаров — AI Solutions Engineer</title>
+    <meta name="description" content="Production AI-системы: RAG, LLM-агенты, голосовые пайплайны. Python, Neo4j, Claude API.">
+    <style>
+        :root {
+            --bg: #fafafa;
+            --text: #1a1a1a;
+            --muted: #666;
+            --accent: #2563eb;
+            --card-bg: #fff;
+            --card-border: #e5e7eb;
+            --before: #dc2626;
+            --after: #16a34a;
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: var(--bg);
+            color: var(--text);
+            line-height: 1.6;
+        }
+        .container { max-width: 800px; margin: 0 auto; padding: 0 24px; }
+        header {
+            padding: 60px 0 40px;
+            border-bottom: 1px solid var(--card-border);
+        }
+        .lang-switch { text-align: right; margin-bottom: 20px; }
+        .lang-switch a { color: var(--muted); text-decoration: none; font-size: 14px; }
+        .lang-switch a:hover { color: var(--accent); }
+        h1 { font-size: 32px; font-weight: 700; margin-bottom: 8px; }
+        .title { font-size: 18px; color: var(--accent); font-weight: 500; margin-bottom: 16px; }
+        .summary { font-size: 16px; color: var(--muted); max-width: 600px; }
+        section { padding: 48px 0; border-bottom: 1px solid var(--card-border); }
+        section:last-child { border-bottom: none; }
+        h2 { font-size: 14px; text-transform: uppercase; letter-spacing: 2px; color: var(--muted); margin-bottom: 32px; }
+        .project {
+            background: var(--card-bg);
+            border: 1px solid var(--card-border);
+            border-radius: 12px;
+            padding: 28px;
+            margin-bottom: 20px;
+        }
+        .project h3 { font-size: 20px; margin-bottom: 4px; }
+        .project .subtitle { font-size: 14px; color: var(--muted); margin-bottom: 16px; }
+        .metric-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 12px;
+            margin-bottom: 16px;
+        }
+        .metric { padding: 12px; border-radius: 8px; font-size: 14px; }
+        .metric.before { background: #fef2f2; border-left: 3px solid var(--before); }
+        .metric.after { background: #f0fdf4; border-left: 3px solid var(--after); }
+        .metric .label {
+            font-size: 11px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            color: var(--muted);
+            margin-bottom: 4px;
+        }
+        .impact {
+            display: inline-block;
+            background: #eff6ff;
+            color: var(--accent);
+            padding: 4px 12px;
+            border-radius: 20px;
+            font-size: 13px;
+            font-weight: 600;
+            margin-bottom: 12px;
+        }
+        .tech { font-size: 13px; color: var(--muted); }
+        .tech span {
+            display: inline-block;
+            background: #f3f4f6;
+            padding: 2px 8px;
+            border-radius: 4px;
+            margin: 2px 4px 2px 0;
+        }
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+        }
+        .skill-group h3 { font-size: 15px; font-weight: 600; margin-bottom: 8px; }
+        .skill-group ul { list-style: none; font-size: 14px; color: var(--muted); }
+        .skill-group li { padding: 3px 0; }
+        .contact-links { display: flex; gap: 24px; flex-wrap: wrap; }
+        .contact-links a { color: var(--accent); text-decoration: none; font-size: 15px; }
+        .contact-links a:hover { text-decoration: underline; }
+        @media (max-width: 600px) {
+            header { padding: 40px 0 30px; }
+            h1 { font-size: 26px; }
+            .metric-grid { grid-template-columns: 1fr; }
+            .contact-links { flex-direction: column; gap: 12px; }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="lang-switch"><a href="index.html">English version</a></div>
+            <h1>Александр Комаров</h1>
+            <div class="title">AI Solutions Engineer</div>
+            <p class="summary">
+                Строю production AI-системы, которые автоматизируют ручную работу экспертов.
+                RAG-системы по базам знаний, автономные агенты, голосовые пайплайны.
+                Превращаю сложные AI-исследования в работающие продукты.
+            </p>
+        </header>
+
+        <section>
+            <h2>Проекты</h2>
+
+            <div class="project">
+                <h3>NeuroLogo</h3>
+                <div class="subtitle">AI-ассистент для детских нейропсихологов</div>
+                <div class="metric-grid">
+                    <div class="metric before">
+                        <div class="label">Было</div>
+                        4.5 часа в день на поиск по учебникам и планирование занятий
+                    </div>
+                    <div class="metric after">
+                        <div class="label">Стало</div>
+                        AI находит методики за секунды с точными ссылками на страницы
+                    </div>
+                </div>
+                <div class="impact">Снижение рутины на 55%</div>
+                <div class="tech">
+                    <span>Python</span>
+                    <span>GraphRAG</span>
+                    <span>Neo4j</span>
+                    <span>Qdrant</span>
+                    <span>Claude API</span>
+                    <span>LightRAG</span>
+                </div>
+            </div>
+
+            <div class="project">
+                <h3>ATOS</h3>
+                <div class="subtitle">Автономная система оптимизации рекламного трафика</div>
+                <div class="metric-grid">
+                    <div class="metric before">
+                        <div class="label">Было</div>
+                        Ручной мониторинг кампаний каждые 2 часа, убытки из-за позднего реагирования
+                    </div>
+                    <div class="metric after">
+                        <div class="label">Стало</div>
+                        Автомониторинг каждые 15 мин + автоблокировка убыточных зон
+                    </div>
+                </div>
+                <div class="impact">8x быстрее мониторинг &middot; 966 тестов (97.5% coverage)</div>
+                <div class="tech">
+                    <span>Python</span>
+                    <span>AsyncIO</span>
+                    <span>PostgreSQL</span>
+                    <span>Redis</span>
+                    <span>Docker</span>
+                    <span>Clean Architecture</span>
+                </div>
+            </div>
+
+            <div class="project">
+                <h3>Voice Transcriber</h3>
+                <div class="subtitle">Пайплайн транскрибации аудио и видео</div>
+                <div class="metric-grid">
+                    <div class="metric before">
+                        <div class="label">Было</div>
+                        4-6 часов ручной расшифровки 1.5-часовой записи
+                    </div>
+                    <div class="metric after">
+                        <div class="label">Стало</div>
+                        Полностью автоматически за 5-10 минут с LLM-улучшением текста
+                    </div>
+                </div>
+                <div class="impact">Сокращение времени на 95%</div>
+                <div class="tech">
+                    <span>Python</span>
+                    <span>Groq API</span>
+                    <span>Deepgram</span>
+                    <span>Claude API</span>
+                    <span>Streamlit</span>
+                    <span>Docker</span>
+                </div>
+            </div>
+
+            <div class="project">
+                <h3>AI Second Brain</h3>
+                <div class="subtitle">Персональная система управления знаниями</div>
+                <div class="metric-grid">
+                    <div class="metric before">
+                        <div class="label">Было</div>
+                        Заметки разбросаны по приложениям, нет структуры, идеи теряются
+                    </div>
+                    <div class="metric after">
+                        <div class="label">Стало</div>
+                        Голос в Telegram &rarr; автообработка &rarr; связанный граф знаний
+                    </div>
+                </div>
+                <div class="impact">500+ связанных заметок &middot; ежедневная автообработка</div>
+                <div class="tech">
+                    <span>Python</span>
+                    <span>Telegram Bot</span>
+                    <span>Deepgram</span>
+                    <span>Claude API</span>
+                    <span>Obsidian</span>
+                    <span>Git</span>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <h2>Технический стек</h2>
+            <div class="skills-grid">
+                <div class="skill-group">
+                    <h3>AI / ML</h3>
+                    <ul>
+                        <li>LLM API (Claude, GPT, Deepgram)</li>
+                        <li>RAG (LightRAG, GraphRAG)</li>
+                        <li>Векторные БД (Qdrant)</li>
+                        <li>Графовые БД (Neo4j)</li>
+                        <li>Промпт-инжиниринг</li>
+                    </ul>
+                </div>
+                <div class="skill-group">
+                    <h3>Backend</h3>
+                    <ul>
+                        <li>Python (AsyncIO, FastAPI)</li>
+                        <li>PostgreSQL, Redis, SQLite</li>
+                        <li>Docker, Docker Compose</li>
+                        <li>Clean Architecture</li>
+                        <li>REST API</li>
+                    </ul>
+                </div>
+                <div class="skill-group">
+                    <h3>Продукт</h3>
+                    <ul>
+                        <li>End-to-end разработка продуктов</li>
+                        <li>Техническое управление проектами</li>
+                        <li>4 продукта за 1 год</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <h2>Контакты</h2>
+            <div class="contact-links">
+                <a href="mailto:alexcontext5@gmail.com">alexcontext5@gmail.com</a>
+                <a href="https://github.com/alexcontext5-prog">GitHub</a>
+                <a href="https://t.me/alexcontext5">Telegram</a>
+            </div>
+        </section>
+    </div>
+</body>
+</html>
